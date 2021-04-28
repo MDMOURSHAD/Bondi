@@ -1,0 +1,146 @@
+
+
+/*-- X-Large devices (large desktops, less than 1400px) --*/
+
+@media (max-width: 1399px) { 
+
+	/* ============================== */
+	/* --REUSABLE COMPONENTS-- */
+	/* ============================== */
+
+	/* ============================== */
+	/* --SECTION-- */
+	/* ============================== */
+ }
+
+/*-- Large devices (desktops, less than 1200px) --*/
+
+@media (max-width: 1199px) { 
+
+	/* ============================== */
+	/* -- REUSABLE COMPONENTS-- */
+	/* ============================== */
+
+	/* ============================== */
+	/* --HEADER SECTION-- */
+	/* ============================== */
+
+	.main-menu{
+		display:none !important;
+	}
+
+	.login-area{
+		display:none !important;
+	}
+	
+	/*==================*/
+	/*-- MOBILE MENU --*/
+	/*==================*/
+
+	.mobile-menu{
+		display:block;
+	}
+
+	.mobile-menu-bars span {
+    	color: #fff;
+    	font-size: 40px;
+	}
+
+	.mobile-menu .overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background: rgba(0,0,0,.9);
+		width: 100%;
+		overflow-x: hidden;
+		z-index:1;
+	}
+
+	.mobile-menu-close a {
+    	position: absolute;
+    	right: 50px;
+    	top: 39px;
+    	color: #999;
+    	font-size: 35px;
+	}
+
+	.mobile-menu .overlay-content{
+		position: relative;
+		top: 5%;
+		text-align: center;
+
+	}
+
+	.overlay-content ul li a {
+    	font-size: 20px;
+    	color: #999;
+    	padding: 15px 0px;
+    	font-weight: 400;
+    	letter-spacing: 3px;
+	}
+	.mobile-menu-search form {
+    	width: 500px;
+    	margin: 0 auto;
+    	overflow: hidden;
+ 	}
+	.search-main{
+
+		width: 70%;
+		float: left;
+		padding: 20px 15px;
+
+	}
+	.search-submit{
+
+		width: 30%;
+		float: left;
+		font-size: 20px;
+		padding: 16px;
+		background:var(--color-4);
+		color:var(--color-3);
+	}
+
+
+ }
+
+
+/*-- Medium devices (tablets, less than 992px) --*/
+
+@media (max-width: 991px) { 
+	
+	/* ============================== */
+	/* --REUSABLE COMPONENTS-- */
+	/* ============================== */
+
+	/* ============================== */
+	/* --SECTION-- */
+	/* ============================== */
+ }
+
+/*-- Small devices (landscape phones, less than 768px) --*/
+
+@media (max-width: 767px) { 
+
+	/* ============================== */
+	/* --REUSABLE COMPONENTS-- */
+	/* ============================== */
+
+	/* ============================== */
+	/* --SECTION-- */
+	/* ============================== */
+	
+ }
+
+/*-- X-Small devices (portrait phones, less than 576px) --*/
+@media (max-width: 575px) { 
+
+	/* ============================== */
+	/* --REUSABLE COMPONENTS-- */
+	/* ============================== */
+
+	/* ============================== */
+	/* --SECTION-- */
+	/* ============================== */
+ }
+		

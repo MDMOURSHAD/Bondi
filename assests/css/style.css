@@ -1,0 +1,285 @@
+
+
+/*==================*/
+/*--VARIABLES--*/
+/*==================*/
+
+:root{
+
+	--title:35px;
+	--sub-title:20px;
+	--paragraph-1:15px;
+	--paragraph-2:13px;
+	--color-1:#1a2940;
+	--color-2:#a8b9c0;
+	--color-3:#ffffff;
+	--color-4:#ff3150;
+	--color-5:#33d1cc;
+	--color-6:#ffc501;
+	--color-7:#19283f;
+
+}
+
+/*====================================*/
+/*-- START BASIC SETUP --*/
+/*====================================*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: 'Roboto';
+}
+
+*,
+*::after,
+*::after{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration:none;
+}
+
+span,
+a,
+label{
+	
+	display:inline-block;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus{
+
+	outline:0;
+	border:0;
+}
+
+/*====================================*/
+/*-- RESUSABLE COMPONENTS --*/
+/*====================================*/
+
+.title{
+	font-size:var(--title);
+	font-weight:500;
+	color:var(--color-1);
+	text-transform:capitalize;
+	margin-top:40px;
+	margin-bottom:15px;
+}
+
+.sub-title{
+	font-size:var(--sub-title);
+	font-weight:500;
+	color:var(--color-6);
+	text-transform:capitalize;
+}
+
+.detail-1,
+.detail-2{
+	font-size:var(--paragraph-1);
+	font-weight:400;
+	color:var(--color-2);
+}
+
+.detail-1{
+	text-transform:uppercase;
+
+}
+
+.detail-2{
+	font-size:var(--paragraph-2);
+}
+
+.btn{
+	padding:15px 60px;
+	background: var(--color-4);
+	color:var(--color-6);
+	text-transform:uppercase;
+	font-weight:500;
+	font-size:var(--paragraph-1);
+}
+
+.line{
+	width:150px;
+	height: 3px;
+	background:#7fe0de;
+	border: none;
+	margin-top:10px;
+	display:inline-block;
+}
+
+.py-55{
+	padding-top:55px;
+	padding-bottom:55px;
+}
+
+/*========================================*/
+/*-- START HEADER SECTION CSS HERE --*/
+/*========================================*/
+
+header{
+	height:100vh;
+	background:var(--color-7);
+	width:100%;
+}
+
+header nav{
+	padding:20px 0px;
+}
+
+/*==================*/
+/*-- MAIN MENU --*/
+/*==================*/
+
+.main-menu li{
+	margin-right:40px;
+}
+
+.main-menu li a{
+	font-weight:400;
+	font-size:var(--paragraph-1);
+	color:var(--color-2);
+	text-transform:capitalize;
+}
+
+.main-menu li a:hover{
+	color:var(--color-5)
+}
+
+/*==================*/
+/*-- LOGIN AREA --*/
+/*==================*/
+
+.v-line{
+	width:2px;
+	height:25px;
+	background:var(--color-5);
+}
+
+.login-area ul li:not(:last-child){
+	margin-right:25px;
+}
+
+/*=============================*/
+/*-- TOGGLE SEARCH BAR --*/
+/*=============================*/
+
+.header-search-wrapper {
+  position: relative;
+  float: right;
+  text-align: center;
+}
+
+.header-search-wrapper .search-main {
+  color: var(--color-5);
+  font-size: var(--sub-title);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header-search-wrapper .search-form-main {
+  position: absolute;
+  top: 50px;
+  right: -18px;
+  width: 350px;
+  box-shadow: 1px 1px 7px rgb(0 0 0 / 15%);
+  border-top: 3px solid var(--color-4);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s linear;
+  z-index:9999;
+
+}
+
+.active-class {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.search-form-main:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  right: 0;
+  border: 15px solid transparent;
+  border-top: 0px;
+  border-bottom: 15px solid var(--color-4);
+  width: 0;
+  transform: translate(-42%, -119%);
+}
+
+.search-form-main .search-form {
+  padding: 20px;
+  overflow: hidden;
+  background: #a8b9c0;
+}
+
+.search-form .search-field {
+    float: left;
+    width: 75%;
+    font-size: 17px;
+    padding: 16px;
+}
+
+.search-form .search-submit {
+  float: right;
+  width: 25%;
+  border-radius: 0;
+  display: inline-block;
+  font-size: 17px;
+  border: 0;
+  cursor: pointer;
+  background: var(--color-4);
+  color: #fff;
+  outline: 0;
+  text-align: center;
+  padding: 16px 10px;
+}
+
+/*==================*/
+/*-- MOBILE MENU --*/
+/*==================*/
+
+.mobile-menu{
+	display:none;
+}
+
+/*==================*/
+/*-- BANNER --*/
+/*==================*/
+
+.banner-text-box .banner-title{
+	color:#f0f8fb;
+	font-size:50px;
+	font-weight:300;
+}
+
+.banner-text-box .banner-desc{
+	text-transform:none !important;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+/*========================================*/
+/*-- START HEADER SECTION CSS HERE --*/
+/*========================================*/
+
+
+/*========================================*/
+/*-- START HEADER SECTION CSS HERE --*/
+/*========================================*/
+
+
+/*========================================*/
+/*-- START HEADER SECTION CSS HERE --*/
+/*========================================*/
+
