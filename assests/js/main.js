@@ -1,7 +1,7 @@
 	
 	$(document).ready(function(){
     
-    	// TOGGLE SEARCH BAR
+    // TOGGLE SEARCH BAR
     	$('.search-main').click(function(){
 
     		$('.search-form-main').toggleClass('active-class');
@@ -9,3 +9,16 @@
     	});
 
 	});
+
+
+	// MOBILE MENU
+	function openNav(){
+
+		document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav(){
+
+		document.getElementById("myNav").style.width = "0%";
+	}
+

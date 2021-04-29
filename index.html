@@ -27,7 +27,7 @@
    <!--============================ START HEADER SECTION ============================
    -->
   
-  <header class="position-relative absolute">
+  <header class="position-relative">
       <nav>
   		    <div class="container">
   				    <!-- NAVIGATION BAR -->
@@ -71,30 +71,35 @@
   						      </div>
                     <!-- MOBILE MENU -->
                     <div class="mobile-menu">
+                        <div class="header-search-wrapper me-20">
+                              <span class="search-main">
+                                  <i class="fas fa-search"></i>
+                              </span>
+                              <div class="search-form-main">
+                                  <form  class="search-form">
+                                      <input type="text" class="search-field" placeholder="Search">
+                                      <input type="submit" class="search-submit" value="Submit">
+                                  </form>
+                              </div>
+                        </div>
                         <div class="mobile-menu-bars">
                             <span onclick="openNav()"><i class="fas fa-bars"></i></span>
                         </div>
-                        <div class="overlay">
+                        <div class="overlay" id="myNav">
                             <div class="mobile-menu-close">
-                              <a href="javascript:void();" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                              <a href="#" onclick="closeNav()"><i class="fas fa-times"></i></a>
                             </div>
                             <div class="overlay-content">
                               <ul>
-                                  <li><a href="#" class="uppercase">home</a></li>
-                                  <li><a href="#" class="uppercase">services</a></li>
-                                  <li><a href="#" class="uppercase">portfolio</a></li>
-                                  <li><a href="#" class="uppercase">about</a></li>
-                                  <li><a href="#" class="uppercase">team</a></li>
-                                  <li><a href="#" class="uppercase">blog</a></li>
-                                  <li><a href="#" class="uppercase">contact</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">home</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">services</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">portfolio</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">about</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">team</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">blog</a></li>
+                                  <li><a href="#" class="uppercase" onclick="closeNav()">contact</a></li>
+                                  <li> <a href="#" class="login-btn rounded-pill">Login</a></li>
                               </ul>
-                              <div class="mobile-menu-search">
-                                <form>
-                                  <input type="search" class="search-main d-inline-block">
-                                  <input type="submit" vlaue="submit d-inline-block" class="search-submit">
-                                </form>
-                              </div>
-                              <a href="#" class="btn rounded-pill">Login</a>
                             </div>
                         </div>
                     </div>

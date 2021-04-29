@@ -127,7 +127,7 @@ textarea:focus{
 /*========================================*/
 
 header{
-	height:100vh;
+	height:90vh;
 	background:var(--color-7);
 	width:100%;
 }
@@ -250,7 +250,7 @@ header nav{
 /*==================*/
 
 .mobile-menu{
-	display:none;
+	display:none !important;
 }
 
 /*==================*/
