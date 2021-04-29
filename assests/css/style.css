@@ -127,7 +127,7 @@ textarea:focus{
 /*========================================*/
 
 header{
-	height:90vh;
+	height:85vh;
 	background:var(--color-7);
 	width:100%;
 }

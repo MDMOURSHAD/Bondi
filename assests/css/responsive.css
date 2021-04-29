@@ -25,9 +25,9 @@
 	/* --HEADER SECTION-- */
 	/* ============================== */
 
-	header{
+	/*header{
     	height: 80vh;
-	}
+	}*/
 
 	.main-menu{
 		display:none !important;
@@ -117,9 +117,7 @@
 	/* --HEADER SECTION-- */
 	/* ============================== */
 
-	header{
-		height:75vh;
-	}
+
 
 
  }
@@ -137,7 +135,7 @@
 	/* ============================== */
 	
 	header{
-		height:110vh;
+		height:120vh;
 	}
  }
 
