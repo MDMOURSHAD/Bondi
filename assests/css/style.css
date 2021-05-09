@@ -122,6 +122,28 @@ textarea:focus{
 	padding-bottom:55px;
 }
 
+.mt-30{
+	margin-top:30px;
+}
+
+.mt-60{
+	margin-top:60px;
+}
+
+/*==================*/
+/*-- PRELOADER --*/
+/*==================*/
+
+.preloader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: #fff url('../images/Spinner-1.4s-200px.gif');
+    z-index: 99999;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*========================================*/
 /*-- START HEADER SECTION CSS HERE --*/
 /*========================================*/
@@ -188,7 +210,7 @@ header nav{
 
 .header-search-wrapper .search-form-main {
   position: absolute;
-  top: 50px;
+  top: 56px;
   right: -18px;
   width: 350px;
   box-shadow: 1px 1px 7px rgb(0 0 0 / 15%);
@@ -269,17 +291,446 @@ header nav{
 	margin-bottom:30px;
 }
 
+
+/*==================*/
+/*-- STICKY MENU --*/
+/*==================*/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    background: var(--color-1);
+    -webkit-box-shadow: 2px 2px 7px 0px #111;
+    box-shadow: 1px 1px 7px 0px #111111;
+}
+
 /*========================================*/
-/*-- START HEADER SECTION CSS HERE --*/
+/*-- START SERVICE SECTION CSS HERE --*/
 /*========================================*/
 
+.service-number-icon{
+	position:relative;
+}
+
+.service-icon-img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.service-item h2{
+	margin:35px 0px;
+}
+
+.service-item p{
+	text-transform:lowercase;
+	line-height:25px;
+	width:80%;
+	margin:auto;
+}
+
+.service-icon-img-1 {
+    transform: translateX(-25%);
+}
 
 /*========================================*/
-/*-- START HEADER SECTION CSS HERE --*/
+/*-- START PORTFOLIO SECTION CSS HERE --*/
 /*========================================*/
 
+.portfolio-section .col-lg-3:nth-child(1){
+	margin-bottom:30px;
+}
+
+.portfolio-filter{
+	margin:60px 0px;
+}
+
+.portfolio-filter button{
+	font-weight:400;
+	font-size:15px;
+	color:var(--color-2);
+	text-transform:capitalize;
+	background:transparent;
+	cursor:pointer;
+}
+
+.portfolio-filter button:not(:last-child){
+	margin-right:40px;
+}
+
+.active{
+	padding:15px 20px !important;
+	background: var(--color-4) !important;
+	color:var(--color-6) !important;
+	text-transform:uppercase !important;
+	font-weight:500 !important;
+	font-size:var(--paragraph-1) !important;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+
+}
+
+.portfolio-overlay {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    height: 100%;
+    background: #111;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background:var(--color-5);
+    opacity:0;
+    transition:.5s ease;
+    -webkit-transition:.5s ease;
+    -moz-transition:.5s ease;
+    -o-transition:.5s ease;
+}
+
+.portfolio-overlay:hover{
+	opacity:1;
+
+}
+.portfolio-overlay h3{
+	color:var(--color-3);
+	font-weight:400;
+	margin-bottom:15px;
+}
+
+.portfolio-overlay span{
+	color:var(--color-1);
+	text-transform: capitalize;
+}
+
+.portfolio-section .more-btn a{
+	padding:15px 50px !important;
+}
 
 /*========================================*/
-/*-- START HEADER SECTION CSS HERE --*/
+/*-- START ABOUT SECTION CSS HERE --*/
 /*========================================*/
 
+.about-section{
+	padding-top:55px;
+}
+
+.about-section .about-desc{
+	font-weight: 300;
+	text-transform:capitalize;
+	width:52%;
+	margin-top:25px;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:23px;
+}
+
+.about-content h2{
+	margin-top:0px !important;
+}
+.about-content p{
+	font-weight:300;
+	width: 85%;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.about-content p span{
+    margin-top:15px;
+}
+
+.about-content a{
+	padding:15px 45px !important;
+}
+
+/*========================================*/
+/*-- START ABOUT SECTION CSS HERE --*/
+/*========================================*/
+
+.team-section{
+	padding-top:110px;
+	padding-bottom:55px;
+	background:#eff7fa;
+}
+	
+.team-section .team-heading{
+	color:var(--color-6) !important;
+	text-transform: none !important;
+	margin-top:0px !important;
+	margin-bottom:30px !important;
+}
+	
+.team-section .team-desc {
+    width: 88% !important;
+    margin: auto;
+    line-height:22px;
+    text-transform: capitalize !important;
+}
+
+.team-section .members-info {
+    text-align: center;
+}
+
+.members-info .memebers-name {
+    background:var(--color-5);
+    color: var(--color-3);
+    padding:12px 0px;
+}
+
+.memebers-name .sub-title{
+	color:var(--color-3) !important;
+	font-weight:400 !important;
+}
+
+.memebers-desc {
+    padding: 30px 0px;
+    background: #fff;
+}
+
+.memebers-desc p {
+    text-transform: none !important;
+    margin: 0 auto;
+    line-height: 18px;
+    width: 80%;
+}
+
+/*========================================*/
+/*-- START CLIENTS SECTION CSS HERE --*/
+/*========================================*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+      /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*========================================*/
+/*-- START PROJECT START SECTION CSS HERE --*/
+/*========================================*/
+
+.project-start{
+	padding:110px 0px;
+	background:var(--color-7);
+}
+
+.project-start-content{
+	text-align:center;
+}
+
+.project-start-content h2{
+	color:var(--color-3) !important;
+	margin-bottom:20px !important;
+	margin-top:0px !important;
+}
+
+.project-start-content p{
+	text-transform: none !important;
+	margin-bottom:50px !important;
+}
+
+.project-start-content a{
+	padding: 15px 50px !important;
+}
+
+/*========================================*/
+/*-- START BLOG SECTION CSS HERE --*/
+/*========================================*/
+
+.blog-content span{
+	margin:15px 0px;
+}
+
+.blog-content h3{
+	font-weight:400 !important;
+	color:var(--color-1) !important;
+}
+
+.blog-btn{
+
+}
+
+.blog-btn a{
+	padding:15px 55px !important;
+}
+
+/*========================================*/
+/*-- START NEWSLATTER SECTION CSS HERE --*/
+/*========================================*/
+
+.newslatter-section{
+	padding:30px 0px;
+	background:var(--color-6);
+}
+
+.newslatter-title h3{
+	color:var(--color-1);
+}
+
+.newslatter-section form .input-field {
+    width: 100%;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    padding-bottom:10px;
+    padding-left:5px;
+    font-weight:400;
+    font-size:var(--paragraph-1);
+
+}
+
+.newslatter-section form .input-field::placeholder{
+	color:var(--color-3);
+	text-transform:none !important;
+}
+
+.newslatter-section form .submit-btn{
+	background:#19283f !important;
+	color:var(--color-6);
+	cursor:pointer;
+	padding:15px 70px !important;
+
+}
+
+/*========================================*/
+/*-- START FOOTER SECTION CSS HERE --*/
+/*========================================*/
+
+.footer-section{
+	background:var(--color-1);
+	color:var(--color-3) !important;
+}
+
+.footer-logo-desc .footer-desc{
+	line-height:20px;
+	margin-top:25px;
+	margin-bottom:70px;
+}
+
+.footer-logo-desc .copywright {
+    width: 62%;
+    line-height: 20px;
+}
+
+.footer-logo-desc .copywright .grph{
+	color:var(--color-5) !important;
+}
+
+.footer-logo-desc .copywright .bondi{
+	color: var(--color-6) !important;
+}
+
+.footer-link-1 h4,
+.footer-link-2 h4,
+.footer-contact h4{
+	color:var(--color-3) !important;
+	text-transform:capitalize !important;
+	margin-bottom: 25px;
+}
+
+.footer-link-1 ul li:not(:last-child),
+.footer-link-2 ul li:not(:last-child){
+	margin-bottom: 17px !important;
+}
+
+.footer-link-1 ul li a,
+.footer-link-2 ul li a{
+	text-transform:capitalize !important;
+}
+
+.footer-contact .mail-btn {
+    text-transform: none !important;
+    color: var(--color-3) !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    padding: 15px 0px !important;
+    width: 100%;
+    text-align: center;
+    margin:40px 0px;
+}
+
+.footer-contact p{
+	width:90%;
+	line-height:20px;
+}
+
+.footer-contact .social-icon a {
+    color: var(--color-3);
+    height: 35px;
+    width: 35px;
+    line-height: 35px;  
+}
+
+.footer-contact .social-icon a:not(:last-child){
+	margin-right:12px;
+}
+
+.social-icon .fb{
+	background:#347cd2 !important;
+}
+
+.social-icon .twitter{
+	background:#1ec4ff !important;
+}
+
+.social-icon .googgle-plus{
+	background:#ff4032 !important;
+}
+
+.social-icon .dribble{
+	background:#ff3298 !important;
+}
+
+/*========================================*/
+/*-- START SCROLL TO TOP CSS HERE --*/
+/*========================================*/
+ 
+ .scroll {
+    position: fixed;
+    right: 15px;
+    height: 40px;
+    font-family: FontAwesome;
+    color: #fff !important;
+    width: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    bottom: 50px;
+    z-index: 1;
+    text-align: center;
+    background: var(--color-4);
+    transition: all .5s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+
+}
+ .scroll:hover{
+ 	transform:translateY(-7px);
+ 	-webkit-transform:translateY(-7px);
+ 	-moz-transform:translateY(-7px);
+ 	-o-transform:translateY(-7px);
+ 	-ms-transform:translateY(-7px);
+ }

@@ -25,10 +25,6 @@
 	/* --HEADER SECTION-- */
 	/* ============================== */
 
-	/*header{
-    	height: 80vh;
-	}*/
-
 	.main-menu{
 		display:none !important;
 	}
@@ -57,11 +53,11 @@
 	}
 
 	.mobile-menu .overlay{
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		height: 100%;
-		padding:60px 0px;
+		padding:120px 0px;
 		background: rgba(0,0,0,1);
 		width: 0%;
 		overflow-x: hidden;
@@ -100,6 +96,10 @@
 		font-size:var(--paragraph-1) !important;	
 	}
 
+	.header-search-wrapper .search-main{
+		font-size:25px !important;
+	}
+
 
 
  }
@@ -113,12 +113,65 @@
 	/* --REUSABLE COMPONENTS-- */
 	/* ============================== */
 
+	.mb-md-30{
+		margin-bottom:30px !important;
+	}
+
 	/* ============================== */
 	/* --HEADER SECTION-- */
 	/* ============================== */
 
+	header nav {
+    	padding: 12px 0px !important;
+
+	}
 
 
+
+	/* ============================== */
+	/* -- SERVICE SECTION -- */
+	/* ============================== */
+
+	.service-item p{
+		width:100% !important;
+	}
+
+	/* ============================== */
+	/* -- PORTFOLIO SECTION -- */
+	/* ============================== */
+
+	.portfolio-section .col-lg-3:nth-child(1) {
+   		 margin-bottom: 0px !important;
+	}
+
+	/* ============================== */
+	/* -- ABOUT US SECTION -- */
+	/* ============================== */
+
+	.about-section {
+     	padding-bottom: 55px !important;
+	}
+
+	.about-section .about-desc{
+		width: 90% !important;
+	}
+
+	.about-content p {
+    	width: 100% !important;
+	}
+
+	/* ============================== */
+	/* -- NEWSLATTER SECTION -- */
+	/* ============================== */
+
+	.newslatter-section .newslatter-title{
+		text-align:center;
+	}
+
+	.newslatter-title h3 {
+    	color: var(--color-1);
+    	line-height: 25px;
+	}
 
 
  }
@@ -128,15 +181,130 @@
 @media (max-width: 767px) { 
 
 	/* ============================== */
-	/* --REUSABLE COMPONENTS-- */
+	/* -- REUSABLE COMPONENTS -- */
 	/* ============================== */
 
+	.py-sm-40{
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+
+	.mb-sm-30{
+		margin-bottom:30px !important;
+	}
+
+	.mt-sm-40{
+		margin-top:40px !important;
+	}
+
 	/* ============================== */
-	/* --HEADER SECTION-- */
+	/* -- HEADER SECTION -- */
 	/* ============================== */
 	
 	header{
 		height:120vh;
+	}
+
+	.banner-text-box .banner-title {
+    	font-size: 40px;
+	}
+
+	/*==================*/
+	/*-- MOBILE MENU --*/
+	/*==================*/
+	
+	.mobile-menu .overlay{
+		padding:60px 0px !important;
+	}
+
+	/* ============================== */
+	/* -- SERVICE SECTION-- */
+	/* ============================== */
+	
+	.service-item h2 {
+    	margin: 25px 0px !important;
+	}
+
+	/* ============================== */
+	/* -- PORTFOLIO SECTION -- */
+	/* ============================== */
+
+	.portfolio-filter {
+    	margin: 40px 0px;
+	}
+
+	.portfolio-section .col-lg-3:nth-child(1){
+		margin-bottom:30px !important;
+	}
+
+	/* ============================== */
+	/* -- ABOUT US SECTION -- */
+	/* ============================== */
+
+	.about-section {
+    	padding-top: 40px !important;
+	}
+
+	.about-section .about-desc {
+    	width: 100% !important;
+	}
+
+	.about-content {
+   	    text-align: center;
+   	    margin-bottom: 20px;
+	}
+
+	/* ============================== */
+	/* -- TEAM SECTION -- */
+	/* ============================== */
+
+	.team-section {
+    	padding-top: 60px !important;
+    	padding-bottom: 60px !important;
+	}
+
+	.team-section .team-desc {
+		width: 100% !important;
+	}
+
+	/* ============================== */
+	/* -- PROJECT START SECTION -- */
+	/* ============================== */
+	
+	.project-start {
+    	padding: 80px 0px;
+	}
+
+	/* ============================== */
+	/* -- BLOG SECTION -- */
+	/* ============================== */
+
+	.blog-section .blog-content {
+    	text-align: center;
+	}
+
+	.subscribe-area{
+		text-align:center;
+	}
+
+	/* ============================== */
+	/* -- FOOTER SECTION -- */
+	/* ============================== */
+	
+	.footer-logo-desc .footer-desc {
+   		 margin-bottom: 40px !important;
+	}
+
+	.footer-contact .mail-btn {
+    	margin: 30px 0px !important;
+	}
+
+	.footer-logo-desc .copywright {
+   	    width: 100%;
+	}
+
+	.footer-contact p {
+ 	   width: 100%;
 	}
  }
 
@@ -147,6 +315,24 @@
 	/* --REUSABLE COMPONENTS-- */
 	/* ============================== */
 
+	.title {
+    	margin-top: 20px !important;
+    	font-size: 30px !important;
+   	}
+
+	.py-xs-40{
+		padding-top:40px !important;
+		padding-bottom:40px !important;
+	}
+
+	.pt-xs-0{
+		padding-top:0px !important;
+	}
+
+	.mt-xs-50{
+		margin-top:50px !important;
+	}
+
 	/* ============================== */
 	/* --HEADER SECTION-- */
 	/* ============================== */
@@ -154,5 +340,46 @@
 	header{
 		height:90vh;
 	}
+
+	.mobile-menu-bars span {
+		font-size: 32px;
+	}
+
+	.banner-text-box .btn{
+		padding:14px 40px !important;
+	}
+
+	/* ============================== */
+	/* -- PORTFOLIO SECTION -- */
+	/* ============================== */
+
+	.portfolio-filter {
+   	    margin: 30px 0px !important;
+	}
+
+	.portfolio-filter button{
+		line-height:20px;
+	}
+
+	.portfolio-filter button:not(:last-child){
+    	margin-right: 20px;
+	}
+
+	.portfolio-filter button:nth-child(1),
+	.portfolio-filter button:nth-child(2),
+	.portfolio-filter button:nth-child(3),
+	.portfolio-filter button:nth-child(4){
+		margin-bottom:20px;
+	}
+
+	/* ============================== */
+	/* -- ABOUT US SECTION -- */
+	/* ============================== */
+
+	.about-section {
+   	    padding-top: 0px !important;
+	}
+
+
  }
 		
