@@ -21,14 +21,16 @@
 </head>
 
 
-<body>
+<body onload="preloader()">
 
+   <!-- PRELOADER -->
+   <div class="preloader"></div>
 
    <!--============================ START HEADER SECTION ============================
    -->
-  
-  <header class="position-relative">
-      <nav>
+
+  <header class="position-relative" id="header">
+      <nav class="nav">
   		    <div class="container">
   				    <!-- NAVIGATION BAR -->
   				    <div class="navigation-bar d-flex justify-content-between">
@@ -40,13 +42,13 @@
   						      <!-- MAIN MENU -->
   						      <div class="main-menu">
   							      <ul>
-  								        <li class="d-inline-block"><a href="#" class="transition-3">home</a></li>
-  								        <li class="d-inline-block"><a href="#" class="transition-3">services<a></li>
-  								        <li class="d-inline-block"><a href="#" class="transition-3">portfolio</a></li>
-  								        <li class="d-inline-block"><a href="#" class="transition-3">about</a></li>
-                          <li class="d-inline-block"><a href="#" class="transition-3">about</a></li>
-                          <li class="d-inline-block"><a href="#" class="transition-3">about</a></li>
-  								        <li class="d-inline-block"><a href="#" class="transition-3">contact</a></li>
+  								        <li class="d-inline-block"><a href="#header" class="transition-3">home</a></li>
+  								        <li class="d-inline-block"><a href="#service" class="transition-3">services<a></li>
+  								        <li class="d-inline-block"><a href="#portfolio" class="transition-3">portfolio</a></li>
+  								        <li class="d-inline-block"><a href="#about" class="transition-3">about</a></li>
+                          <li class="d-inline-block"><a href="#team" class="transition-3">team</a></li>
+                          <li class="d-inline-block"><a href="#blog" class="transition-3">blog</a></li>
+  								        <li class="d-inline-block"><a href="#contact" class="transition-3">contact</a></li>
   							      </ul>             
   						      </div>
   						      <!-- LOGIN AREA -->
@@ -91,13 +93,13 @@
                             </div>
                             <div class="overlay-content">
                               <ul>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">home</a></li>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">services</a></li>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">portfolio</a></li>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">about</a></li>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">team</a></li>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">blog</a></li>
-                                  <li><a href="#" class="uppercase" onclick="closeNav()">contact</a></li>
+                                  <li><a href="#header" class="uppercase" onclick="closeNav()">home</a></li>
+                                  <li><a href="#service" class="uppercase" onclick="closeNav()">services</a></li>
+                                  <li><a href="#portfolio" class="uppercase" onclick="closeNav()">portfolio</a></li>
+                                  <li><a href="#about" class="uppercase" onclick="closeNav()">about</a></li>
+                                  <li><a href="#team" class="uppercase" onclick="closeNav()">team</a></li>
+                                  <li><a href="#blog" class="uppercase" onclick="closeNav()">blog</a></li>
+                                  <li><a href="#contact" class="uppercase" onclick="closeNav()">contact</a></li>
                                   <li> <a href="#" class="login-btn rounded-pill">Login</a></li>
                               </ul>
                             </div>
@@ -128,54 +130,441 @@
    <!--============================ START SERVICE SECTION ============================
    -->
 
-   <section class="service-section py-55">
+   <section class="service-section py-55 py-xs-40" id="service">
       <div class="container">
         <div class="section-heading text-center">
-            <img src="assests/images/heading-icon.png">
+            <img src="assests/images/heading-icon.jpg">
             <h2 class="title">We are Good at </h2>
             <p class="detail-1">SOME OF THEASE STUFF UNDER</p>
             <hr class="line m-auto">
         </div>
+        <div class="row mt-60">
+          <div class="col-lg-4 col-md-6 mb-md-30">
+            <div class="service-item text-center">
+              <div class="service-number-icon">
+                <img src="assests/images/service-1.jpg" alt="service-1">
+                <div class="service-icon-img service-icon-img-1">
+                  <img src="assests/images/service-1-icon.jpg" alt="service-1-icon">
+                </div>
+              </div>
+              <h2 class="sub-title">GRAPHIC DESIGN</h2>
+              <p class="detail-1 m-lg-auto">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-md-30">
+            <div class="service-item text-center">
+              <div class="service-number-icon">
+                <img src="assests/images/service-2.jpg" alt="service-1">
+                <div class="service-icon-img">
+                  <img src="assests/images/service-2-icon.jpg" alt="service-2-icon">
+                </div>
+              </div>
+              <h2 class="sub-title">WEB DESIGN</h2>
+              <p class="detail-1 m-lg-auto">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 m-md-auto">
+            <div class="service-item text-center">
+              <div class="service-number-icon">
+                <img src="assests/images/service-3.jpg" alt="service-1">
+                <div class="service-icon-img">
+                  <img src="assests/images/service-3-icon.jpg" alt="service-3-icon">
+                </div>
+              </div>
+              <h2 class="sub-title">APP DESIGN</h2>
+              <p class="detail-1 m-lg-auto">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+            </div>
+          </div>
+        </div>
       </div>
    </section>
-
-
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
 
    <!--============================ END SERVICE SECTION ============================-->
 
 
-   <!--============================ START HEADER SECTION ============================
+   <!--============================ START PORTFOLIO SECTION ============================
    -->
 
+   <section class="portfolio-section py-55 py-sm-40 pt-xs-0" id="portfolio">
+     <div class="container">
+        <div class="section-heading text-center">
+            <img src="assests/images/heading-icon.jpg">
+            <h2 class="title">We Make This</h2>
+            <p class="detail-1">PREPARE TO BE AMAZED</p>
+            <hr class="line m-auto">
+        </div>
+        <div class="portfolio-filter text-center">
+            <button type="button" id="all" data-filter="all"class="active capitalize">all</button>
+            <button type="button" id="design" data-filter=".design"class="capitalize">design</button>
+            <button type="button" id="code" data-filter=".code"class="capitalize">code</button>
+            <button type="button" id="Photography"data-filter=".Photography"class="capitalize">Photography</button>
+            <button type="button" id="apps" data-filter=".apps"class="capitalize">apps</button>
+        </div>
+        <div class="row portfolio-container">
+            <div class="col-lg-3 col-md-6 mix code mb-md-30">
+                <div class="portfolio-item position-relative">
+                    <img src="assests/images/portfolio-1.jpg" alt="portfolio-1" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-6 mix code">
+                <div class="portfolio-item position-relative mb-md-30">
+                    <img src="assests/images/portfolio-2.jpg" alt="portfolio-2" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mix col-md-6 code mb-md-30">
+                <div class="portfolio-item position-relative">
+                    <img src="assests/images/portfolio-3.jpg" alt="portfolio-3" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mix apps mb-md-30">
+                <div class="portfolio-item position-relative">
+                    <img src="assests/images/portfolio-4.jpg" alt="portfolio-4" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mix Photography mb-md-30">
+                <div class="portfolio-item position-relative">
+                    <img src="assests/images/portfolio-5.jpg" alt="portfolio-5" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mix Photography mb-md-30">
+                <div class="portfolio-item position-relative">
+                    <img src="assests/images/portfolio-6.jpg" alt="portfolio-6" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-sm-30 mix design">
+                <div class="portfolio-item position-relative code">
+                    <img src="assests/images/portfolio-7.jpg" alt="portfolio-7" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mix design">
+                <div class="portfolio-item position-relative">
+                    <img src="assests/images/portfolio-8.jpg" alt="portfolio-8" class="w-100 d-block">
+                    <div class="portfolio-overlay d-flex justify-content-center align-items-center">
+                      <h3 class="sub-title">Awesome Work</h3>
+                      <span class="detail-1">/Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-btn mt-60 text-center mt-xs-50">
+            <a href="#" class="btn rounded-pill">I WANT MORE...</a>
+        </div>
+     </div>
+   </section>
 
 
-   <!--============================ END HEADER SECTION ============================-->
+   <!--============================ END PORTFOLIO SECTION ============================-->
 
 
-   <!--============================ START HEADER SECTION ============================
+   <!--============================ START ABOUT US SECTION ============================
    -->
+   <section class="about-section" id="about">
+     <div class="container">
+        <div class="section-heading text-center">
+            <img src="assests/images/heading-icon.jpg">
+            <h2 class="title">Some Stuff About Us</h2>
+            <p class="detail-1">THE GREAT TEAM</p>
+            <hr class="line m-auto">
+            <p class="detail-1 about-desc">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+        </div>
+        <div class="row mt-60 mt-sm-40">
+          <div class="col-lg-5 col-md-6 d-flex mb-sm-30 align-items-center">
+            <div class="about-content">
+              <h2 class="title">Retina Design</h2>
+              <p class="detail-1 capitalize">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+
+              <span class="d-block">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</span></p>
+              <a href="#" class="btn rounded-pill">order me one</a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="about-img">
+              <img src="assests/images/about-us.png" class="w-100" alt="aboust-us">
+            </div>
+          </div>
+        </div>
+     </div>
+   </section>
+
+   <!--============================ END ABOUT US SECTION ============================-->
+
+   <!--============================ START TEAM SECTION ============================-->
+
+   <section class="team-section py-xs-40" id="team">
+      <div class="container">
+          <div class="section-heading text-center">
+              <h2 class="title team-heading">Meet the Team</h2>
+              <p class="detail-1 team-desc">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+          </div>
+          <div class="row mt-60 mt-sm-40">
+            <div class="col-lg-3 col-md-6 mb-md-30">
+              <div class="members-info">
+                <img src="assests/images/members-1.jpg" class="w-100 d-block">
+                <div class="memebers-name">
+                  <h3 class="sub-title">Luke Skywalker</h3>
+                </div>
+                <div class="memebers-desc">
+                  <p class="detail-1">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-md-30">
+              <div class="members-info">
+                <img src="assests/images/members-2.jpg" class="w-100 d-block">
+                <div class="memebers-name">
+                  <h3 class="sub-title">Obi-Wan Kenobi</h3>
+                </div>
+                <div class="memebers-desc">
+                  <p class="detail-1">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-sm-30">
+              <div class="members-info">
+                <img src="assests/images/members-3.jpg" class="w-100 d-block">
+                <div class="memebers-name">
+                  <h3 class="sub-title">Princess Leia</h3>
+                </div>
+                <div class="memebers-desc">
+                  <p class="detail-1">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+              <div class="members-info">
+                <img src="assests/images/members-4.jpg" class="w-100 d-block">
+                <div class="memebers-name">
+                  <h3 class="sub-title">Yoda</h3>
+                </div>
+                <div class="memebers-desc">
+                  <p class="detail-1">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+   </section>
+
+   <!--============================ END TEAM SECTION ============================-->
 
 
-   <!--============================ END HEADER SECTION ============================-->
+   <!--============================ START CLIENTS SECTION ============================-->
+
+   <div class="clients-section py-55 py-sm-40">
+      <div class="container">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assests/images/clients-1.jpg" alt="clinents-1"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-2.jpg" alt="clinents-2"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-3.jpg" alt="clinents-3"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-4.jpg" alt="clinents-4"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-5.jpg" alt="clinents-5"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-6.jpg" alt="clinents-6"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-1.jpg" alt="clinents-1"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-2.jpg" alt="clinents-2"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-3.jpg" alt="clinents-3"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-4.jpg" alt="clinents-4"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-5.jpg" alt="clinents-5"></div>
+                  <div class="swiper-slide"><img src="assests/images/clients-6.jpg" alt="clinents-6"></div>
+              </div>
+          </div>
+      </div>
+   </div>
+
+   <!--============================ END CLIENTS SECTION ============================-->
 
 
+   <!--============================ START PROJECT START SECTION ============================-->
+
+   <section class="project-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <div class="project-start-content">
+                <h2 class="title">Start Your Project Now</h2>
+                <p class="detail-1">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
+                <a href="#" class="btn rounded-pill">START PROJECT</a>
+              </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <!--============================ END PROJECT START SECTION ============================-->
 
 
+   <!--============================ START BLOG SECTION ============================-->
 
+   <section class="blog-section py-55" id="blog">
+      <div class="container">
+        <div class="section-heading text-center">
+            <img src="assests/images/heading-icon.jpg">
+            <h2 class="title">Read Our Blog</h2>
+            <p class="detail-1">NEW STORIES</p>
+            <hr class="line m-auto">
+        </div>
+          <div class="row mt-60 mt-sm-40">
+            <div class="col-md-4 mb-sm-30">
+                <div class="blog-content">
+                    <img src="assests/images/members-1.jpg" alt="blog-1" class="w-100">
+                    <span class="detail-2">January 17,2017</span>
+                    <h3 class="sub-title">Some Awesome Blog Title Here</h3>
+                </div>
+            </div>
+            <div class="col-md-4 mb-sm-30">
+                <div class="blog-content">
+                    <img src="assests/images/members-1.jpg" alt="blog-1" class="w-100">
+                    <span class="detail-2">January 17,2017</span>
+                    <h3 class="sub-title">Some Awesome Blog Title Here</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-content">
+                    <img src="assests/images/members-1.jpg" alt="blog-1" class="w-100">
+                    <span class="detail-2">January 17,2017</span>
+                    <h3 class="sub-title">Some Awesome Blog Title Here</h3>
+                </div>
+            </div>
+          </div>
+          <div class="blog-btn text-center mt-60 mt-sm-40">
+            <a href="#" class="btn rounded-pill">MORE STORIES</a>
+          </div>
+      </div>
+   </section>
+
+   <!--============================ END  BLOG SECTION ============================-->
+
+   <!--============================ START  NEWSLATTER SECTION ============================-->
+
+   <section class="newslatter-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-3 mb-sm-30">
+            <div class="newslatter-title text-end">
+                <h3 class="sub-title">Subscribe to our Newsletter:</h3>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-9">
+            <form>
+                <div class="row">
+                    <div class="col-md-7 mb-sm-30">
+                      <input type="text"  placeholder="Enter email Address" name="text" class="input-field capitalize">
+                    </div>
+                    <div class="col-md-5 subscribe-area">
+                      <input type="submit" name="submit" class="submit-btn btn rounded-pill capitalize" value="Subscribe">
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <!--============================ END  NEWSLATTER SECTION ============================-->
+
+    <!--============================ START  FOOTER SECTION ============================-->
+
+    <footer class="footer-section py-55 py-sm-40" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4  mb-sm-30">
+            <div class="footer-logo-desc">
+                <a href="index.html"><img src="assests/images/logo.png" alt="footer-logo"></a>
+                <p class="footer-desc detail-2">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+
+                <p class="copywright detail-2">Created by <span class="grph">Graphberry</span>,Belgrade,Serbia © 2017 - <span class="bondi">Bondi.Inc</span></p>
+
+            </div>
+          </div>
+          <div class="col-md-2 mb-sm-30">
+            <div class="footer-link-1">
+                <h4 class="detail-1">Links</h4>
+                <ul>
+                    <li><a href="#" class="detail-2">home</a></li>
+                    <li><a href="#" class="detail-2">Our Services</a></li>
+                    <li><a href="#" class="detail-2">Portfolio</a></li>
+                    <li><a href="#" class="detail-2">Testimonials</a></li>
+                    <li><a href="#" class="detail-2">Support</a></li>
+                    <li><a href="#" class="detail-2">Terms and Conditions</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-md-2 mb-sm-30">
+            <div class="footer-link-2">
+                <h4 class="detail-1">About Us</h4>
+                <ul>
+                    <li><a href="#" class="detail-2">Sign In</a></li>
+                    <li><a href="#" class="detail-2">Register</a></li>
+                    <li><a href="#" class="detail-2">About Us</a></li>
+                    <li><a href="#" class="detail-2">Blog</a></li>
+                    <li><a href="#" class="detail-2">Contact Us</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-contact">
+              <h4 class="detail-1">Contact Us</h4>
+              <p class="detail-2">Get in touch with us via mail phone.We are waiting for 
+              your call or message</p>
+              <a href="#" class="btn rounded-pill mail-btn">graphberry@gmail.com</a>
+              <div class="social-icon">
+                <a href="#" class="text-center circle fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-center circle twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-center circle googgle-plus"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="text-center circle dribble"><i class="fab fa-dribbble"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--============================ END  FOOTER SECTION ============================-->
+
+    <!-- START SCROLL TO TOP -->
+
+    <div class="scroll-top">
+      <a href="#header" class="scroll"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!-- END SCROLL TO TOP -->
+
+     
 
 	<!-- JS HERE -->
 	<script type="text/javascript" src="assests/js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="assests/js/mixitup.min.js"></script>
 	<script type="text/javascript" src="assests/js/swiper-bundle.min.js"></script>
 	<script type="text/javascript" src="assests/js/main.js"></script>
+
 </body>
+
 </html>
