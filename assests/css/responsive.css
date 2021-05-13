@@ -50,6 +50,12 @@
 	.mobile-menu-bars span {
     	color: #fff;
     	font-size: 40px;
+    	cursor: pointer;
+	}	
+
+	.mobile-menu-bars span {
+    	color: #fff;
+    	font-size: 40px;
 	}
 
 	.mobile-menu .overlay{
@@ -349,6 +355,28 @@
 		padding:14px 40px !important;
 	}
 
+	/*=============================*/
+	/*-- TOGGLE SEARCH BAR --*/
+	/*=============================*/
+
+	.header-search-wrapper .search-form-main {
+    	width: 260px !important;
+	}
+
+	.search-form-main .search-form {
+    	padding: 15px !important;
+	}
+
+	.search-form .search-field {
+    	padding: 14px !important;
+    	width:70% !important;
+	}
+
+	.search-form .search-submit {
+   		padding: 15px 0px;
+   		width:30% !important;
+   		font-size:16px !important;
+	}
 	/* ============================== */
 	/* -- PORTFOLIO SECTION -- */
 	/* ============================== */

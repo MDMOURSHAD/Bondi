@@ -218,7 +218,7 @@ header nav{
   visibility: hidden;
   opacity: 0;
   transition: all 1s linear;
-  z-index:9999;
+  z-index:1;
 
 }
 
@@ -298,8 +298,7 @@ header nav{
 .sticky {
     position: fixed;
     top: 0;
-    z-index: 1;
-    overflow: hidden;
+    z-index: 2;
     left: 0;
     width: 100%;
     background: var(--color-1);
@@ -397,6 +396,7 @@ header nav{
 	opacity:1;
 
 }
+
 .portfolio-overlay h3{
 	color:var(--color-3);
 	font-weight:400;
@@ -449,7 +449,7 @@ header nav{
 }
 
 /*========================================*/
-/*-- START ABOUT SECTION CSS HERE --*/
+/*-- START TEAM SECTION CSS HERE --*/
 /*========================================*/
 
 .team-section{
@@ -512,8 +512,6 @@ header nav{
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-      /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -564,13 +562,15 @@ header nav{
 	margin:15px 0px;
 }
 
+.blog-content img{
+	height:130px;
+	object-fit:cover;
+	object-position: center;
+}
+
 .blog-content h3{
 	font-weight:400 !important;
 	color:var(--color-1) !important;
-}
-
-.blog-btn{
-
 }
 
 .blog-btn a{
@@ -726,6 +726,7 @@ header nav{
     -o-transition: all .4s ease-in;
 
 }
+
  .scroll:hover{
  	transform:translateY(-7px);
  	-webkit-transform:translateY(-7px);
